@@ -1,8 +1,22 @@
 import React from "react";
+import './Card.css'
 
 
-const Card = () => {
-  return <div>Hola, soy una tarjeta</div>;
-};
+const Card = ({ peliculas, setDia}) => {
 
-export default Card;
+
+  return (
+  <div >
+      <h3>{peliculas.nombre}</h3>
+      <h4>{peliculas.tematica}</h4>
+      <button onClick={() => setDia(true)}>Dia de Reserva</button>
+      
+  </div>
+  )
+}
+
+export default Card
+
+
+  
+
